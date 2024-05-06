@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Pizza.css">
+</head>
+<body>
+   
+    <!-- Size -->
+    <fieldset style="display: inline;">
+        <legend>Choose Size:</legend>
+        <label><input type="radio" name="size"  value="1" >Small</label>
+        <label>
+            <input type="radio" name="size" value="2">Medium
+        </label>
+        <label>
+            <input type="radio" name="size" value="3" >Large
+        </label>
+        
+
+    </fieldset>
+ <!-- Toppings -->
+    <fieldset style="display: inline;">
+        <legend>Choose Toppings:</legend>
+        <label><input type="checkbox" name="op" value="2.00">Pepperoni</label>
+        <label>
+            <input type="checkbox" name="op" value="2.00" >Bacon
+        </label>
+        <label>
+            <input type="checkbox" name="op" value="2.00" >Mushroom
+        </label>
+        <label>
+            <input type="checkbox" name="op" value="2.00" >Pepper
+        </label>
+        <label>
+            <input type="checkbox" name="op" value="2.00" >Sardines
+        </label>
+    </fieldset>
+
+    <input type="button" value="Submit" onclick="calc()">
+    <p id="out1">...</p>
+
+
+
+  
+  
+    <div class="container">
+    <img  src="PizzaSlice.png" class="P12">
+        <img src="Pepperoni.png" class="image0" Name="Pic"/>
+        <img src="Bacon.png" class="image1" Name="Pic"/>
+        <img src="Mushroom.png" class="image2" Name="Pic"/>
+        <img src="Pepper.png" class="image3" Name="Pic"/>
+        <img src="Sardines.png" class="image4" Name="Pic"/>
+    </div>
+
+    <p id="receipt"> Receipt 
+        <br><br>
+        Total ↓ <p id="out2">...</p>
+    </p>
+    <script src="Pizza.js"></script>
+  
+</body>
+
+</html>
